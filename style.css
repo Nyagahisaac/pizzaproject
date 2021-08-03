@@ -110,7 +110,7 @@ ul li a{
 }
 /* home  */
 .home-section{
-    background-image: url(pizzaproject/Photos/80.jpeg);
+    background-image: url(/pizzaproject/Photos/80.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -341,7 +341,7 @@ ul li a{
 
 }
 .blog-text-1 p{
-    background-image: url(pizzaproject/Photos/red.jpg);
+    background-image: url(/pizzaproject/Photos/red.jpg);
     opacity: 0.9;
     width: calc((100% /3)- 30px);
     border: 2px solid var(--dark-light);
@@ -352,7 +352,7 @@ ul li a{
     
 }
 .blog-text-2 p{
-    background-image: url(pizzaproject/Photos/taxido.jpg);
+    background-image: url(/pizzaproject/Photos/taxido.jpg);
     width: calc((100% /3)- 30px);
     border: 2px solid var(--dark-light);
     padding: 30px;
@@ -361,7 +361,7 @@ ul li a{
     color: var(--dark-light);
 }
 .blog-text-3 p{
-    background-image: url(pizzaproject/Photos/girl.jpg);
+    background-image: url(/pizzaproject/Photos/girl.jpg);
     width: calc((100% /3)- 30px);
     border: 2px solid var(--dark-light);
     padding: 30px;
