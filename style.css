@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Gabriela&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#eaa023;
+    --dark:#0c1023;
+    --dark-light:#191f3a;
+    --white:#ffffff;
+    --white-light:#c8c8c8;
+    --shadow:0 0 15px rgba(0,0,0,0.25);
+}
+body{
+    background-color: beige;
+    font-family: sans-serif;
+    overflow-x: hidden;    
+}
+.badge-pill {
+    background-color: var(--white-light);
+    color: black;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+}
+nav{
+    display: flex;
+    /* justify-content: space-between; */
+    background-color:#fff ;
+    box-shadow:  2px 2px 1px rgba(0,0,0,0.2);
+    height:50px ;
+    align-items: center;
+    width: 100%;
+    background-color: var(--white-light);
+    padding:50px;
+    
+    
+    
+}
+.order, nav{
+    justify-content: space-between;
+}
+.order{
+    float: left;
+    margin: 20px;
+
+}
+
+nav ul li {
+    
+    display:inline-block;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200px;
+    cursor: pointer;
+    font-weight: 00;
+    background-color: transparent;
+    border: none;
+}
+nav ul li :hover{
+    color: var(--main-color);
+}
+.nav-header img{
+    height: 20vh;
+    width: 30%;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+}
+#nav-img{
+    height:10vh;
+    background-color: transparent;
+
+    margin-bottom:15px;
+    padding-right:5px ;
+}
+
+#order{
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2) ;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    left: 80px;
+}
+#order:hover{
+    background-color: var(--white-light);
+    text-decoration: none;
+    color: var(--main-color);
+}
+#logo{
+    font-size: 35px;
+    text-decoration: none;
+    color: #eaa023;
+    font-weight: bolder;
+    font-family: 'Gabriela', serif;
+    
+}
+ul li a{
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 5px;
+    font-weight: 500px;
+    color: gray;
+}
+/* home  */
+.home-section{
+    background-image: url(/Photos/80.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100% 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    
+}
+.home-text p{
+    font-size: 45px;
+    line-height: 55px;
+    margin-left: 10px;
+    color: #eaa023; 
+}
+.home-text p:nth-child(1){
+    font-family:'Gabriela' serif;
+    text-align: center;
+    font-weight: 700;
+    color:var(--dark);
+    font-size: 25px;
+    transform: translate(33% , 260%);
+}
+
+.btn{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    transform: translate(220%, 450%);
+     box-shadow:  5px 5px 5px 5px rgb(#eaa023); 
+    font-size: 50px;
+    /* background-color: var(--dark); */
+    color: var(--main-color);
+    border: 2px var(--dark-light);
+    border-radius: 70%;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.btn:hover{
+    border: 12px var(--white-light);
+    background-color: darkgreen;
+    color: var(--white);
+}
+
+
+.home-text p{
+    line-height: 30px;
+    margin: 35px 20px 35px 20px;
+}
+
+/* ABOUT SECTION */
+#my-image{
+    height:50vh;
+    width: 50%;
+    margin-bottom:150px ;
+
+  
+}
+.about-container{
+    background-color: var(--white-light);
+    height: 50vh;
+    margin-top: 5px;
+}
+.about-text h1{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size:45px ;
+    font-family: 'Gabriela' serif;
+}
+
+.about-text{
+    text-align: center;
+     transform: translate(22% , -190%);
+    color: var(--dark-light);
+    font-size: 35px;
+}
+.about-text h2{
+    color: var(--dark-light);
+    font-weight: 800;
+    font-family: 'Dancing' ;
+}
+
+/* menu section */
+#menu-item{
+    text-align: center;
+    
+}
+.section-title{
+    align-items: center;
+    color: var(--white-light);
+    align-items: center;
+    display: center;
+    justify-content: center;
+    
+
+    /* /* background-color: violet; * */
+}
+.section-title h2{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Gabriela'serif;
+}
+.section-title h2::before {
+    content: attr(data-title);
+    color: var(--main-color);
+    font-size: 30px;
+    display: block;
+    font-family: 'Dancing Script', cursive;
+}
+.menu-section{
+    background-color: var(--dark-light);
+    margin-top: 1px;
+}
+.menu-tabs{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    padding-right: 100px;
+    display:center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    /* background-color: rgb(156, 228, 13); */
+}
+.menu-tab-item{
+    color: var(--white);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    border: none;
+    background-color:transparent ;
+    font-weight: 500;
+    margin: 0 10px 10px;
+    right: inherit 120px;
+}
+.menu-tab-item.active{
+    color: var(--main-color);
+}
+
+.menu-tab-content .active{
+    display:flex;
+}
+.menu-item-title img{
+    height: 15vh;
+    /* width: auto 100%; */
+     padding: 20px;
+     max-width: 100px; 
+
+}
+.menu-item-title h3{
+    color: var(--white-light);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    transition: color 0.3 ease;
+    text-transform: capitalize;
+}
+.menu-item{
+    
+    width: 30%;
+    align-items: center;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-light);
+    position: relative;
+    border-right:solid 1px white !important;
+    margin: 10px;
+    /* display: none; */
+}
+
+.menu-item::after{
+    content: "";
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    border-right:solid 5px white !important;
+    /* border: 2px dashed var(--white-light); */
+}
+.menu-item-title{
+    display: flex;
+    
+    /* justify-content: center; */
+    align-items: center;
+}
+.menu-item-price{
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu-item:hover  h3{
+    color: var(--main-color);
+}
+.menu-item:hover .menu-item-price{
+    color: var(--white-light);
+}
+
+/* BLOG SECTION */
+.blog-text h1{
+    font-weight: bold;
+    color: var(--dark-light);
+    font-family: 'Delius Swash Caps', cursive;
+    font-family: ' Gabriela' serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.col-md-4{
+    
+    justify-content: space-between;
+    width: calc((100% /3)- 30px);
+    border: 0px solid var(--dark-light);
+    padding: 30px;
+    height: 65vh;
+    
+}
+#cart{
+    background-color: #EEEEEE;
+    color: var(--black);
+}
+.blog-author-name{
+    font-family: 'Delius Swash Caps', cursive;
+    font-family: ' Gabriela' serif;
+    font-weight: bolder;
+    color: var(--dark-light);
+    text-align: center;
+
+}
+.blog-text-1 p{
+    background-image: url(/Photos/red.jpg);
+    opacity: 0.9;
+    width: calc((100% /3)- 30px);
+    border: 2px solid var(--dark-light);
+    padding: 30px;
+    font-size: 25px;
+    background-color: var(--white-light);
+    color: var(--dark-light);
+    
+}
+.blog-text-2 p{
+    background-image: url(/Photos/taxido.jpg);
+    width: calc((100% /3)- 30px);
+    border: 2px solid var(--dark-light);
+    padding: 30px;
+    font-size: 25px;
+    background-color: var(--whitelight);
+    color: var(--dark-light);
+}
+.blog-text-3 p{
+    background-image: url(/Photos/girl.jpg);
+    width: calc((100% /3)- 30px);
+    border: 2px solid var(--dark-light);
+    padding: 30px;
+    font-size: 25px;
+    background-color: var(--white-light);
+    color: var(--dark-light);
+}
+/* contact us */
+.contact-us{
+    background-color:var(--dark-light);
+    width: 100% 100%;
+    color: var(--main-color);
+}
+.contact-text{
+    display: flex;
+    justify-content: space-between;
+    font-weight:bolder ;
+    font-family: 'Gabriela', serif;
+}
+.col-md-3{
+    font-weight:bolder ;
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+}
+/* copyright */
+.copyright{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--white-light);
+    background-color: var(--dark-light);
+    text-align: center;
+
+}

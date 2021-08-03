@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+</head>
+<body style="background-color: --dark-light;">
+    <div class="input-section" style="margin: 30px;"  >
+            <h1>PIZZA FORM</h1> 
+            <div class="input-details">
+                <div class="form-group">
+                    <label class="control-label">SIZE</label>
+                    <select id="sizePick" name="sizeName" class="form-control">
+                        <option value="">Choose Size...</option>
+                        <option value="Extra large">Extra Large --$1200</option>
+                        <option value="Large">Large --$1000 </option>
+                        <option value="Medium">Medium --$800</option>
+                        <option value="Small">Small --$600</option>
+                    </select>
+                </div>
+
+            </select>
+            
+                <label for="id-crust">
+                    CRUST
+                </label>
+                <select id="crustPick">
+                    <option value="">Choose Crust...</option>
+                    <option>
+                        Stuffed --$200
+                    </option>
+                    <option>
+                        Cheesy --$150
+                    </option>
+                    <option>
+                        Cauliflower --$100
+                    </option>
+                    <option>
+                        Thincrust --$50
+                    </option>
+                </select>
+            
+                    <label for="id-toppins">
+                        TOPPINS 
+                    </label>
+                    <select id="toppinsPick">
+                        <option value="">Choose Toppins...</option>
+                        <option>
+                            Peperoni  --$250
+                        </option>
+                        <option>
+                            Peri peri --$200
+                        </option>
+                        <option>
+                            Hawaiian --$100
+                        </option>
+                    </select>
+                    <div class="">
+                        Qty <br>
+                        <input type="text" value="1" placeholder="Qty" name="quantity" style="width: 40px;height: 20px;" id="pre-quantity"
+                            class="form-control">
+                    </div>
+
+                    <input type="submit" value="Submit 0rder" onclick="submitOrder(event)">
+                    <input type="submit" value="delivery 0rder" onclick="deliver0rder(event)">
+                    <fieldset>
+                    <fieldset>
+                        <div class="input-text" style="display: none;" id="delivery" >
+                            <h2>
+                                Delivery Form
+                            </h2>
+                            <label for="id-name">
+                                Name
+                            </label>
+                            <input id="id-name" type="text" size="30">
+                            <label for="id-address">
+                                Address
+                            </label>
+                            <input id="id-address" type="text" size="40">
+                            <label for="id-phone">
+                                Phone
+                            </label>
+                            <input id="id-phone" type="text" size="14">
+                            <label for="id-delivery">
+                                Delivery Method
+                            </label>
+                            <select id="id-delivery">
+                                <option value="">Choose delivery...</option>
+                                <option>
+                                    Eat in store (free)
+                                </option>
+                                <option>
+                                    Pickup (free)
+                                </option>
+                                <option>
+                                    Home delivery (pin-location)
+                                </option>
+                            </div>
+        </div>
+            </div>       
+           
+    </div>
+</body>
+</html>

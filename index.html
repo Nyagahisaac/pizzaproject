@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>PIZZAH_SHOP</title>
+</head>
+
+<body>
+    <div class="nav-section">
+        <nav class="text">
+            <img id="nav-img" src="/Photos/top.jpg" alt="">
+
+            <div class="nav-content">
+                <ul class="nav-toggler">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#our menu">MENU</a></li>
+                    <li><a href="#Blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT </a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+    </div>
+
+    <!-- HOME SECTION -->
+    <section class="home-section" id="home">
+        <div class="order">
+            <a id="order" href="order.html"> Order online</a>
+        </div>
+        <div class="home-text" style="text-align: center;">
+
+            <!-- h1PIZZA INN</p> -->
+            <P>
+                When exploring the various types of Pizza such as the, <br> a Hawaiian pizza, <br> a Regina pizza, or a
+                Peri Peri Chicken pizza <br> from Pizza
+                Inn is
+                the obvious <br> and perfect option to please crowds of all ages.
+            </P>
+            <a href="#our menu" id="default" class="btn btn-default">Our Menu</a>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <div class="about-container " id="about">
+
+        <img id="my-image" src="/Photos/resaurant.jpg " alt="">
+        <!-- <img id="my-image" src="/Photos/about-sec_files/vt_012.png" alt=""> -->
+        <div class="about-text" style="text-align: center;">
+            <h1>ABOUT US</h1>
+            <h2> Pizza Inn </h2>
+            <P class="about-paragraph">
+
+                Welcome to the place of choice, <br> which offers variety of Pizza flavours <br> you desier or
+                choose at a
+                pocket friendly price.
+
+            </P>
+
+        </div>
+    </div>
+    <!-- MENU TWO -->
+    <section class="menu-section sec-padding" id="our menu">
+        <div class="container">
+            <div class="row-title" style="text-align: center;">
+                <div class="section-title">
+                    <h2 data-title="order now">Our Menu</h2>
+                </div>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#size">SIZE</a></li>
+                <li><a data-toggle="tab" href="#crust">CRUST</a></li>
+                <li><a data-toggle="tab" href="#toppins">TOPPINS</a></li>
+                <li><a data-toggle="tab" href="#cartTab">SHOPPING CART <span class="badge badge-pill bg-primary"
+                            id="shopNo"></span></a></li>
+            </ul>
+            <div class="bg-primary"
+                style="display: flex;height: 50px;border-radius: 3%; padding: 5px;margin-top: 20px;justify-content: space-between;">
+
+                <div class="">
+                    Size <br>
+                    <input type="hidden" name="sizePre" id="sizePre" value="">
+                    <span class="badge badge-pill" id="pre-size"></span>
+                </div>
+                <div class="">
+                    Crust <br>
+                    <input type="hidden" name="crustPre" id="crustPre" value="">
+                    <span class="badge badge-pill" id="pre-crust"></span>
+                </div>
+                <div class="">
+                    Toppings <br>
+                    <input type="hidden" name="topPre" id="topPre" value="">
+                    <span class="badge badge-pill" id="pre-tops"></span>
+                </div>
+                <div class="">
+                    Qty <br>
+                    <input type="text" value="1" placeholder="Qty" name="quantity" style="width: 40px;height: 20px;"
+                        id="pre-quantity" class="form-control">
+                </div>
+                <div class="">
+
+                    <button class="badge p-2 mt-3" id="preCart"
+                        style="background-color: #eaa023 !important; font-size: 17px;">Add To
+                        Cart</button>
+                </div>
+
+            </div>
+            <div class="tab-content">
+                <div id="size" class="tab-pane fade in active">
+                    <div class="" style="display: flex;">
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/large.jpg" alt="">
+                                <h3>Extra large</h3>
+                            </div>
+                            <div class="menu-item-price">
+                                $1200.00
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-title">
+                                <img src="/Photos/large.jpg" alt="">
+                                <h3>Large</h3>
+                            </div>
+                            <div class="menu-item-price">
+                                $1000.00
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/large.jpg" alt="">
+                                <h3>Medium</h3>
+                            </div>
+                            <div class="menu-item-price">
+                                $800.00
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src=" /Photos/large.jpg" alt="">
+                                <h3>Small</h3>
+                            </div>
+                            <div class="menu-item-price">
+                                $600.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">SIZE</label>
+                        <select id="sizePick" name="sizeName" class="form-control">
+                            <option value="">Choose Size...</option>
+                            <option value="ExtraLarge">Extra Large</option>
+                            <option value="Large">Large</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Small">Small</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="crust">
+
+                    <div class="row menu-tab-content">
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/large.jpg" alt="">
+                                <h3>Stuffed</h3>
+                            </div>
+                            <div class="menu-item-price">$250</div>
+
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/creamy.jpeg" alt="">
+                                <h3>Cheesy</h3>
+                            </div>
+                            <div class="menu-item-price">$200
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/large.jpg" alt="">
+                                <h3>Thin crust</h3>
+                            </div>
+                            <div class="menu-item-price">$150</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/large.jpg" alt="">
+                                <h3>Cauliflower</h3>
+                            </div>
+                            <div class="menu-item-price">$200</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Crust</label>
+                        <select id="crustPick" name="crustName" class="form-control">
+                            <option value="">Choose Crust...</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Cheesy">Cheesy</option>
+                            <option value="Cauliflower">Cauliflower</option>
+                            <option value="Thincrust">Thincrust</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="toppins">
+                    <div class="row menu-tab-content" id="toppins">
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/peperoni.jpeg" alt="">
+                                <h3>Pepperoni</h3>
+                            </div>
+                            <div class="menu-item-price">$200
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/hawaian.jpeg" alt="">
+                                <h3>Hawaiian</h3>
+                            </div>
+                            <div class="menu-item-price">$150 </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <img src="/Photos/large.jpg" style="max-width: 100px;" alt="">
+                                <h3>Peri peri</h3>
+                            </div>
+                            <div class="menu-item-price"> $100</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Crust</label>
+                        <select id="topsPick" name="topsName" class="form-control">
+                            <option value="">Choose Toppings...</option>
+                            <option value="Peperoni">Peperoni</option>
+                            <option value="Hawaiian">Hawaiian</option>
+                            <option value="Periperi">Periperi</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="cartTab">
+                    <table id="cart-table" class="table table-sm table-condensed table-hover mt-5"
+                        style="background-color: white;">
+                        <thead class="bg-light">
+                            <tr>
+                                <th>Size</th>
+                                <th>Crust</th>
+                                <th>Toppings</th>
+                                <th>Quantity</th>
+                                <th>Ammount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-table-body">
+    
+                        </tbody>
+                    </table>
+                    <div class="card p-2" style="text-align: center;">
+                        <center>
+
+                            <div class="form-group">
+                                <input type="checkbox" id="pre-delivery"> Add Delivery Fee ?
+                            </div>
+                            <div class="form-group">
+                                <label class="">Name</label>
+                                <input type="text" style="width: 30% !important;" class="form-control" placeholder="Name..." id="username">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Destination</label>
+                                <input type="text" style="width: 30% !important;"  id="destination" class="form-control">
+                            </div>
+                        </center>
+                        <p>Total Amount: <span id="TotalPrice"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </section>
+    <!-- Blog section -->
+    <div class="container" id="Blog">
+        <div class="blog-text">
+            <h1>MY BLOG</h1>
+        </div>
+        <div class="blog-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-author">
+                        <div class="blog-author-name">
+                            <h2>Reddington</h2>
+                            <span>Food specialist</span>
+                        </div>
+                    </div>
+                    <div class="blog-text-1">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis nemo quod aliquam
+                            eaque esse dolore ullam vero et sit. Cum iste laudantium possimus! Cupiditate eos, unde
+                            impedit atque suscipit optio.
+                        </p>
+                    </div>
+                    <!-- <div class="blog-img">
+                        <img src="/Photos/red.jpg" alt="">
+                     </div> -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="blog-author">
+                        <div class="blog-author-name">
+                            <h2>Claus</h2>
+                            <span>Food specialist</span>
+                        </div>
+                    </div>
+                    <div class="blog-text-2">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis nemo quod aliquam
+                            eaque esse dolore ullam vero et sit. Cum iste laudantium possimus! Cupiditate eos, unde
+                            impedit atque suscipit optio.
+                        </p>
+                    </div>
+
+                    <div class="blog-img">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="blog-author">
+                        <div class="blog-author-name">
+                            <h2>Demion</h2>
+                            <span>Food specialist</span>
+                        </div>
+                    </div>
+                    <div class="blog-text-3">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis nemo quod aliquam
+                            eaque esse dolore ullam vero et sit. Cum iste laudantium possimus! Cupiditate eos, unde
+                            impedit atque suscipit optio.
+                        </p>
+                    </div>
+
+                    <div class="blog-img">
+                        <img src="" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Contact Me Section -->
+    <footer>
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="contact-us">
+                    <div class="header text-center">
+                        <h1>Contact Information</h1>
+                    </div>
+                    <div class="contact-text">
+                        <div class="col-md-3">
+                            <h3>Address:</h3>
+                            <p>Tom-mboya 21th street ,Suite 712 Nairobi </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Location</h3>
+                            <p>Nairobi, Kiambu, Mombasa, Thikah...</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>E-mail</h3>
+                            <p>PizzaInn.@g-mail.com</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Contact us</h3>
+                            <p>+254011125487 && 07011544144</p>
+                        </div>
+
+                    </div>
+                    <div class="copyright">
+                        <p class="text-center" id="copyright">&copy;IZOOH 254</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<script>
+
+</script>
+
+</html>
