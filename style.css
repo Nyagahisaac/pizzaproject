@@ -348,7 +348,7 @@ ul li a{
     padding: 30px;
     font-size: 25px;
     background-color: var(--white-light);
-    color: var(--dark-light);
+    color:transparent;
     
 }
 .blog-text-2 p{
@@ -358,7 +358,7 @@ ul li a{
     padding: 30px;
     font-size: 25px;
     background-color: var(--whitelight);
-    color: var(--dark-light);
+    color: transparent;
 }
 .blog-text-3 p{
     background-image: url(/pizzaproject/Photos/girl.jpg);
@@ -367,7 +367,7 @@ ul li a{
     padding: 30px;
     font-size: 25px;
     background-color: var(--white-light);
-    color: var(--dark-light);
+    color: transparent;
 }
 /* contact us */
 .contact-us{

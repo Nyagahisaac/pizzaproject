@@ -75,7 +75,7 @@
         </div>
     </div>
     <!-- MENU TWO -->
-    <section class="menu-section sec-padding" id="our menu">
+    <section class="menu-section sec-padding pb-5" id="our menu">
         <div class="container">
             <div class="row-title" style="text-align: center;">
                 <div class="section-title">
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">SIZE</label>
+                        <label class="control-label">Choose Size</label>
                         <select id="sizePick" name="sizeName" class="form-control">
                             <option value="">Choose Size...</option>
                             <option value="ExtraLarge">Extra Large</option>
@@ -208,7 +208,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Crust</label>
+                        <label class="control-label">Choose Crust</label>
                         <select id="crustPick" name="crustName" class="form-control">
                             <option value="">Choose Crust...</option>
                             <option value="Stuffed">Stuffed</option>
@@ -245,7 +245,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Crust</label>
+                        <label class="control-label">Choose Toppings</label>
                         <select id="topsPick" name="topsName" class="form-control">
                             <option value="">Choose Toppings...</option>
                             <option value="Peperoni">Peperoni</option>
@@ -286,7 +286,9 @@
                                 <input type="text" style="width: 30% !important;"  id="destination" class="form-control">
                             </div>
                         </center>
+                        <input type="hidden" value='' id="totalpriceinput">
                         <p>Total Amount: <span id="TotalPrice"></span></p>
+                        <button class="btn-outline-primary" id="submit-order">Submit Order</button>
                     </div>
                 </div>
             </div>

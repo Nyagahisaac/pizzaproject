@@ -140,16 +140,32 @@ $(function () {
         $('#TotalPrice').empty();
         $('#TotalPrice').append(totalPizza)
 
-        
-        $('#pre-delivery').click(function(){
-            var cartDelivery = 150;
-            ('#pre-delivery').val();
-            ('#pre-delivery').append (cartDelivery);
-            $('#TotalPrice').append(totalPizza) + cartDelivery;
-        });
+        $('#totalpriceinput').val(totalPizza);
         // console.log(cartPre + ', '+cartSize + ', ' + cartTops)
- 
+        
     });
+    $('#pre-delivery').change(function(){
+        var cartDelivery = 150;
+        var Amount = $('#totalpriceinput').val();
+        console.log(Amount);
+        if($('#pre-delivery').is(':checked')){
+            var total = parseInt(Amount) + cartDelivery;
+        }else{
+            var total = parseInt(Amount) - cartDelivery;
+        }
+        $('#TotalPrice').empty();
+        $('#TotalPrice').append(total + ' (<small>Delivery Fee Included</small>)')
+        $('#totalpriceinput').val(total);
+    });
+    $('#submit-order').click(function(){
+        if($('#pre-delivery').is(':checked')){
+            var destination = $('#destination').val();
+        }else{
+            var total = parseInt(Amount) - cartDelivery;
+            alert('Your order has been completed'  )
+        }
+
+    })
 
 });
 $(function () {
